@@ -1,0 +1,25 @@
+.item td p {
+  color: #2a89ff;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.item td select {
+  width: 200px;
+  height: 35px;
+  border: 2px solid #bfbfbf;
+}
+.item td input {
+  line-height: 30px;
+  text-align: center;
+}
+
+.item td button {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #f72d2d;
+  background: transparent;
+  color: #f72d2d;
+  text-align: center;
+  line-height: 30px;
+}

@@ -1,0 +1,14 @@
+ul{
+  list-style: none;
+}
+.links li{
+  width: 190px;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+  margin: 0 20px 10px 0;
+  padding-left: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  border: 1px solid #EEEEEE;
+}
