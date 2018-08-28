@@ -10,11 +10,15 @@ class ItemList extends Component {
     this.add = this.add.bind(this)
   }
   add() {
+    this.props.onUpadte([2,3,6])
+  }
+  componentWillReceiveProps(nextProps) {
     this.setState({
-      value:[2,3,6]
+      ...nextProps
     })
   }
   render() {
+    // const {text,value,onClick} = this.props
     return <tr className={style.item }>
       <td width="200"><p>{this.state.text}({this.state.value.join(",")})</p></td>
       <td width="200">

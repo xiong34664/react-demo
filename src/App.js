@@ -28,6 +28,13 @@ class App extends Component {
       items: this.state.items
     })
   }
+  updateItem(index,value) {
+    const items = [...this.state.items]
+    items[index].value = value
+    this.setState({
+      items
+    })
+  }
   render() {
     return (
       <div>
@@ -38,7 +45,7 @@ class App extends Component {
         </ul>
         <table>
           <tbody>
-            {this.state.items.map((item,i)=> <ItemList key={item.id} {...item} onClick={()=>this.deleteItem(i)}/>)}
+            {this.state.items.map((item,i)=> <ItemList key={item.id} {...item} onUpadte={this.updateItem.bind(this,i)} onClick={()=>this.deleteItem(i)}/>)}
           </tbody>
           
         </table>
